@@ -1,0 +1,16 @@
+{
+    "name": "node-red-contrib-parser",
+    "version": "1.0.0",
+    "description": "A hidden node that parses input",
+    "main": "parser.js",
+    "scripts": {
+        "test": "test parser"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "parser": "parser.js"
+        }
+    }
+}
