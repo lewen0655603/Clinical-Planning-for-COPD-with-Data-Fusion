@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('web',{
+        category: 'Data Collection Nodes',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:"Web"},
+			address: {value:""},
+			html_tag: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"web";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="web">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="name">
+    </div>
+	<div class="form-row">
+        <label for="node-input-address"><i class="fa fa-tag"></i> URL</label>
+        <input type="text" id="node-input-address" placeholder="url">
+    </div>
+	<div class="form-row">
+        <label for="node-input-html_tag"><i class="fa fa-tag"></i> HTML Tag</label>
+        <input type="text" id="node-input-html_tag" placeholder="a">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="web">
+    <p>A simple node that obtains and returns data from a website</p>
+</script>

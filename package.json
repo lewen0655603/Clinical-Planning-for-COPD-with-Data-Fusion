@@ -1,0 +1,20 @@
+{
+    "name": "node-red-contrib-web",
+    "version": "1.0.0",
+    "description": "A node that obtains and returns data from a web resource",
+    "main": "web.js",
+    "scripts": {
+        "test": "test web"
+    },
+    "dependencies": {
+        "axios": ">=0.21.1",
+        "cheerio": ">=0.22.0"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "web": "web.js"
+        }
+    }
+}

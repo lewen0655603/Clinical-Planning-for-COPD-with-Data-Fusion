@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('DSL',{
+        category: 'Domain Specific Language Nodes',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:"DSL"},
+			rules: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"DSL";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="DSL">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="name">
+    </div>
+	<div class="form-row">
+        <label for="node-input-rules"><i class="fa fa-tag"></i> DSL Rules</label>
+        <textarea id="node-input-rules" rows="10"></textarea>
+    </div>
+
+</script>
+
+<script type="text/html" data-help-name="DSL">
+    <p>A node that allows custom DSL rules</p>
+</script>

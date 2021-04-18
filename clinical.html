@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('clinical',{
+        category: 'Information Nodes',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+			clinical_values: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"clinical";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="clinical">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="clinical">
+    </div>
+	<div class="form-row">
+     <label for="node-input-clinical_values"><i class="fa fa-tag"></i> Clinical Values</label>
+     <input type="text" id="node-input-clinical_values">
+	</div>
+</script>
+
+
+
+<script type="text/html" data-help-name="clinical">
+    <p>A simple node that returns the set clinical values</p>
+</script>

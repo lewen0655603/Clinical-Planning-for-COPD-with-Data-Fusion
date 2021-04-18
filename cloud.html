@@ -1,0 +1,52 @@
+<script type="text/javascript">
+    RED.nodes.registerType('cloud',{
+        category: 'Data Collection Nodes',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+			access_key: {value:""},
+			secret_access_key: {value:""},
+			bucket_name: {value: ""},
+			region: {value: ""},
+			item_name: {value: ""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"cloud";
+        }
+    });
+</script>
+
+
+<script type="text/html" data-template-name="cloud">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Cloud</label>
+        <input type="text" id="node-input-name" placeholder="Cloud">
+    </div>
+	<div class="form-row">
+        <label for="node-input-access_key"><i class="fa fa-tag"></i> Access Key</label>
+        <input type="text" id="node-input-access_key" placeholder="Access Key">
+    </div>
+	<div class="form-row">
+        <label for="node-input-secret_access_key"><i class="fa fa-tag"></i> Secret Key</label>
+        <input type="text" id="node-input-secret_access_key" placeholder="Secret Key">
+    </div>
+	<div class="form-row">
+        <label for="node-input-bucket_name"><i class="fa fa-tag"></i> Bucket Name</label>
+        <input type="text" id="node-input-bucket_name" placeholder="bucket">
+    </div>
+	<div class="form-row">
+        <label for="node-input-region"><i class="fa fa-tag"></i> Region</label>
+        <input type="text" id="node-input-region" placeholder="us-east-2">
+    </div>
+	<div class="form-row">
+        <label for="node-input-item_name"><i class="fa fa-tag"></i> Item Name</label>
+        <input type="text" id="node-input-item_name" placeholder="item">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="cloud">
+    <p>A simple node that obtains and returns data from a cloud resource</p>
+</script>
