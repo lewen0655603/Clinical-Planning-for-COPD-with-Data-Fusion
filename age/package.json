@@ -1,0 +1,16 @@
+{
+    "name": "node-red-contrib-age",
+    "version": "1.0.0",
+    "description": "A node that returns the set age of a patient",
+    "main": "age.js",
+    "scripts": {
+        "test": "test age"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "age": "age.js"
+        }
+    }
+}
