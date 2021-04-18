@@ -1,0 +1,16 @@
+{
+    "name": "node-red-contrib-alert",
+    "version": "1.0.0",
+    "description": "A node that displays a set alert to the user",
+    "main": "alert.js",
+    "scripts": {
+        "test": "test alert"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "alert": "alert.js"
+        }
+    }
+}
