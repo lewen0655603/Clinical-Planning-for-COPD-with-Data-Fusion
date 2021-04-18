@@ -1,0 +1,16 @@
+{
+    "name": "node-red-contrib-DSL",
+    "version": "1.0.0",
+    "description": "A node that allows users to input their own custom DSL for clinical planning",
+    "main": "DSL.js",
+    "scripts": {
+        "test": "test DSL"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "DSL": "DSL.js"
+        }
+    }
+}
