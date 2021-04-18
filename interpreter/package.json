@@ -1,0 +1,16 @@
+{
+    "name": "node-red-contrib-interpreter",
+    "version": "1.0.0",
+    "description": "A hidden node that interprets input",
+    "main": "interpreter.js",
+    "scripts": {
+        "test": "test interpreter"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "interpreter": "interpreter.js"
+        }
+    }
+}
