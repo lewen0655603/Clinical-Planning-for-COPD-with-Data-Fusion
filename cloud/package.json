@@ -1,0 +1,20 @@
+{
+    "name": "node-red-contrib-cloud",
+    "version": "1.0.0",
+    "description": "A node that obtains and returns data from a cloud resource",
+    "main": "cloud.js",
+    "scripts": {
+        "test": "test cloud"
+    },
+    "dependencies": {
+        "aws-sdk": ">=2.850.0",
+        "fs": ">=0.0.1"
+    },
+    "author": "Lisa",
+    "license": "ISC",
+    "node-red": {
+        "nodes": {
+            "cloud": "cloud.js"
+        }
+    }
+}
